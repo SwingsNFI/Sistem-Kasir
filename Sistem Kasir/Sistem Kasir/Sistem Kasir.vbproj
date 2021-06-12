@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E71146E-6332-4D48-B740-0CE294689704}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistem_Kasir.My.MyApplication</StartupObject>
+    <RootNamespace>Sistem_Kasir</RootNamespace>
+    <AssemblyName>Sistem Kasir</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistem Kasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistem Kasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdBarang.Designer.vb">
+      <DependentUpon>AdBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdKaryawan.Designer.vb">
+      <DependentUpon>AdKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllofReport.Designer.vb">
+      <DependentUpon>AllofReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllofReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiskonTransaksi.Designer.vb">
+      <DependentUpon>DiskonTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiskonTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDiskonTransaksi.Designer.vb">
+      <DependentUpon>EditDiskonTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDiskonTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPajakTransaksi.Designer.vb">
+      <DependentUpon>EditPajakTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditPajakTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libraryku.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PajakTransaksi.Designer.vb">
+      <DependentUpon>PajakTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PajakTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportberdasarkanIDtransaksi.Designer.vb">
+      <DependentUpon>ReportberdasarkanIDtransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportberdasarkanIDtransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportberdasarkankasir.Designer.vb">
+      <DependentUpon>Reportberdasarkankasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportberdasarkankasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportKaryawan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportKaryawan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportKaryawanViewer.Designer.vb">
+      <DependentUpon>ReportKaryawanViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportKaryawanViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBarangViewer.Designer.vb">
+      <DependentUpon>ReportBarangViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBarangViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAdBar.Designer.vb">
+      <DependentUpon>EditAdBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAdBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAdKar.Designer.vb">
+      <DependentUpon>EditAdKar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAdKar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewPassword.Designer.vb">
+      <DependentUpon>NewPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTransaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksiIDtransaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTransaksiIDtransaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksiIDtransaksiViewer.Designer.vb">
+      <DependentUpon>ReportTransaksiIDtransaksiViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTransaksiIDtransaksiViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksikasir.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTransaksikasir.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksikasirViewer.Designer.vb">
+      <DependentUpon>ReportTransaksikasirViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTransaksikasirViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksiViewer.Designer.vb">
+      <DependentUpon>ReportTransaksiViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTransaksiViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.vb">
+      <DependentUpon>ResetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranAdmin.Designer.vb">
+      <DependentUpon>TranAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TranAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi.Designer.vb">
+      <DependentUpon>Transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdBarang.resx">
+      <DependentUpon>AdBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdKaryawan.resx">
+      <DependentUpon>AdKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllofReport.resx">
+      <DependentUpon>AllofReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiskonTransaksi.resx">
+      <DependentUpon>DiskonTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDiskonTransaksi.resx">
+      <DependentUpon>EditDiskonTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPajakTransaksi.resx">
+      <DependentUpon>EditPajakTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PajakTransaksi.resx">
+      <DependentUpon>PajakTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportberdasarkanIDtransaksi.resx">
+      <DependentUpon>ReportberdasarkanIDtransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportberdasarkankasir.resx">
+      <DependentUpon>Reportberdasarkankasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportKaryawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportKaryawan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportKaryawanViewer.resx">
+      <DependentUpon>ReportKaryawanViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBarangViewer.resx">
+      <DependentUpon>ReportBarangViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAdBar.resx">
+      <DependentUpon>EditAdBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAdKar.resx">
+      <DependentUpon>EditAdKar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPassword.resx">
+      <DependentUpon>NewPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBarang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportTransaksi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksiIDtransaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportTransaksiIDtransaksi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksiIDtransaksiViewer.resx">
+      <DependentUpon>ReportTransaksiIDtransaksiViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksikasir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportTransaksikasir.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksikasirViewer.resx">
+      <DependentUpon>ReportTransaksikasirViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTransaksiViewer.resx">
+      <DependentUpon>ReportTransaksiViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranAdmin.resx">
+      <DependentUpon>TranAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi.resx">
+      <DependentUpon>Transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
